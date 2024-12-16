@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DescriptionBlock from "../DescriptionBlock/DescriptionBlock";
 import MoneyPathBlock from "../MoneyPathBlock/MoneyPathBlock";
 import AdvantagesBlock from "../AdvantagesBlock/AdvantagesBlock";
-import style from "./ScrollBlock.module.scss";
+// import style from "./ScrollBlock.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
