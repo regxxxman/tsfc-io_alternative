@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DescriptionBlock from "../DescriptionBlock/DescriptionBlock";
 import MoneyPathBlock from "../MoneyPathBlock/MoneyPathBlock";
 import AdvantagesBlock from "../AdvantagesBlock/AdvantagesBlock";
+import style from "./ScrollBlock.module.scss"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,7 +33,7 @@ const ScrollBlock = () => {
           inertia: false,
           duration: { min: 0.2, max: 0.5 }, // Более плавная анимация
         },
-        end: () => panelsContainer.scrollWidth - panelsContainer.offsetWidth, // Учитываем полную ширину контейнера
+        // end: () => panelsContainer.scrollWidth - panelsContainer.offsetWidth, // Учитываем полную ширину контейнера
       },
     });
     
@@ -50,7 +51,8 @@ const ScrollBlock = () => {
         display: "flex",
         overflow: "hidden", // Скрываем горизонтальный скролл
         // width: "100vw", // Задаём ширину окна
-      }}
+      }
+    }
     >
       <div className="panel" style={{ flex: "0 0 100vw" }}>
         <MoneyPathBlock />
@@ -61,7 +63,7 @@ const ScrollBlock = () => {
         </div>
       </div>
       <div className="panel" style={{ flex: "0 0 100vw" }}>
-        <div style={{height: "100vh", alignContent: "center"}}>
+        <div style={{height: "100vh", alignContent: "center", width: "100vw"}}>
         <AdvantagesBlock />
         </div>
       </div>
