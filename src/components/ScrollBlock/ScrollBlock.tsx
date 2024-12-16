@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DescriptionBlock from "../DescriptionBlock/DescriptionBlock";
 import MoneyPathBlock from "../MoneyPathBlock/MoneyPathBlock";
 import AdvantagesBlock from "../AdvantagesBlock/AdvantagesBlock";
-import style from "./ScrollBlock.module.scss"
+import style from "./ScrollBlock.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,16 +27,13 @@ const ScrollBlock = () => {
         pin: true, // Закрепляем контейнер
         start: "top top",
         scrub: 1, // Скролл-синхронизация
-        // markers: true, // Уберите "true" в релизе
         snap: {
           snapTo: 1 / (panels.length - 1), // Привязка к панелям
           inertia: false,
           duration: { min: 0.2, max: 0.5 }, // Более плавная анимация
         },
-        // end: () => panelsContainer.scrollWidth - panelsContainer.offsetWidth, // Учитываем полную ширину контейнера
       },
     });
-    
 
     return () => {
       scrooll_trigger.scrollTrigger?.kill(); // Уничтожение анимации и триггера
@@ -49,22 +46,20 @@ const ScrollBlock = () => {
       id="panels-container"
       style={{
         display: "flex",
-        overflow: "hidden", // Скрываем горизонтальный скролл
-        // width: "100vw", // Задаём ширину окна
-      }
-    }
+        overflowX: "hidden", // Скрываем горизонтальный скролл
+      }}
     >
       <div className="panel" style={{ flex: "0 0 100vw" }}>
         <MoneyPathBlock />
       </div>
       <div className="panel" style={{ flex: "0 0 100vw" }}>
-        <div style={{height: "100vh", alignContent: "center"}}>
-        <DescriptionBlock />
+        <div style={{ height: "100vh", alignContent: "center" }}>
+          <DescriptionBlock />
         </div>
       </div>
       <div className="panel" style={{ flex: "0 0 100vw" }}>
-        <div style={{height: "100vh", alignContent: "center", width: "100vw"}}>
-        <AdvantagesBlock />
+        <div style={{ height: "100vh", alignContent: "center", width: "100vw" }}>
+          <AdvantagesBlock />
         </div>
       </div>
     </div>
