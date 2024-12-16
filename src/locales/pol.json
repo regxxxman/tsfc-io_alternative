@@ -1,0 +1,177 @@
+{
+  "form": {
+    "nameLabel": "Imię",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Numer telefonu",
+    "commentLabel": "Podaj szczegółowe informacje na temat swojego zapytania lub propozycji.",
+    "policyText": "Klikając przycisk, zgadzasz się na",
+    "policyLink": "politykę prywatności",
+    "successMessage": "Zapytanie zostało pomyślnie wysłane! Oczekuj kontaktu od menedżera.",
+    "sendButton": "Wyślij",
+    "sendingButton": "Wysyłanie...",
+    "errorMessage": "Wystąpił błąd!",
+    "restartSend": "Powtórz."
+  },
+  "financialServices": {
+    "title": "Jak możemy ci pomóc?",
+    "services": {
+      "trade": "Handel: oferujemy narzędzie, które pozwala Ci czerpać korzyści z profesjonalnego zespołu traderów, dostosowywalne zaledwie w kilka kliknięć.",
+      "portfolio": "Formowanie portfela: Optymalizacja i kompozycja portfela inwestycyjnego klienta w celu osiągnięcia maksymalnej efektywności i zgodności z celami.",
+      "familyOffice": "Usługi biura rodzinnego: opracowywanie strategii planowania finansowego, w tym zarządzania budżetem, gromadzenia majątku, planowania emerytalnego, pomocy i wsparcia w dokonywaniu transakcji na całym świecie.",
+      "educationalPrograms": "Indywidualne programy edukacyjne w dziedzinie cyfrowych aktywów, badań i należyta staranność."
+    }
+  },
+  "footer": {
+    "supportLink": "Wsparcie",
+    "riskWarningLink": "Ostrzeżenie o ryzyku",
+    "userAgreementLink": "Polityka Prywatności rodo",
+    "kycPolicyLink": "Polityka AML/KYC",
+    "cookiePolicyLink": "Polityka plików cookie",
+    "termsOfServices": "Warunki usług"
+  },
+  "notFound": {
+    "errorMessage": "Błąd. Spróbuj wrócić do ",
+    "homeLinkText": "strony głównej",
+    "contactText": "lub skontaktuj się z nami za pośrednictwem komunikatorów:"
+  },
+  "modal": {
+    "buttonText": "Zezwalaj na wszystkie pliki cookie",
+    "declineButtonText": "Odrzuć wszystkie pliki cookie",
+    "cookieTitle": "Zarządzanie plikami cookie",
+    "cookieText": "Ta strona internetowa używa plików cookie. Pliki cookie zapamiętują twoje działania i preferencje, zapewniając lepsze wrażenia online."
+  },
+  "validationErrors": {
+    "fieldRequired": "Pole wymagane",
+    "fieldIncorrect": "Nieprawidłowe pole"
+  },
+  "navbar": {
+    "home": "GŁÓWNA",
+    "about": "O USŁUGACH",
+    "howToStart": "JAK STARTOWAĆ",
+    "faq": "FAQ",
+    "contactUs": "KONTAKT"
+  },
+  "login": {
+    "getTheApp": "Pobierz Aplikację",
+    "or": "lub",
+    "login": "Logowanie"
+  },
+  "banner": {
+    "tradingService": "USŁUGA HANDLOWA",
+    "youDontNeedTo": "NIE MUSISZ ",
+    "trust": "UFAĆ"
+  },
+  "basedInSw": "Based in Switzerland",
+  "cookies": {
+    "cookiesHeading": "Cookies managing",
+    "cookiesText": "This website uses cookies. Cookies remember your actions and preferences for a better online experience.",
+    "cookiesAllow": "Allow all cookies",
+    "cookiesReject": "Reject all cookies"
+  },
+  "moneyPathBlock": {
+    "yourMoneyStaysWithYou1": "PIENIĄDZE ",
+    "yourMoneyStaysWithYou2": "POZOSTAJĄ ",
+    "yourMoneyStaysWithYou3": "Z TOBĄ",
+    "client": "Klient",
+    "exchange": "Giełda",
+    "apiKeys": "API Keys"
+  },
+  "descriptionBlock": {
+    "expectedROITitle": "Oczekiwany ROI",
+    "expectedROI": "38% APY*",
+    "minimumEntryAmountTitle": "Minimalna kwota wejścia",
+    "minimumEntryAmount": "Od",
+    "feeTitle": "Prowizja",
+    "fee": "(od zysku)",
+    "investmentPeriodTitle": "Okres inwestycji",
+    "investmentPeriodFrom": "Od",
+    "investmentPeriod": "3 miesięcy",
+    "TSFCDescriptionFirstPart": "to klasyczna usługa handlowa na rynku aktywów cyfrowych. Inwestując za pośrednictwem TSFC, klienci przyznają prawo do wykonywania transakcji i operacji ze swoimi środkami na giełdzie kryptowalut.",
+    "TSFCDescriptionSecondPart": "Ważne jest, aby pamiętać, że pracujemy z kluczami API klienta, bez bezpośredniego dostępu do środków i bez możliwości wypłaty.",
+    "TSFCDescriptionSub": "Obliczono na podstawie historycznych zwrotów, ale dodatnie zwroty w przeszłości nie gwarantują zwrotów w przyszłości",
+    "howToStart": "Jak rozpocząć"
+  },
+  "advantagesBlock": {
+    "whyUs": "Dlaczego warto nas wybrać?",
+    "safety": "Bezpieczeństwo",
+    "theMoneyStaysWithYou": "Pieniądze pozostają u powiernika, nie są przekazywane bezpośrednio nam",
+    "convenience": "Wygoda",
+    "allTradingDecisions": "Wszystkie decyzje handlowe należą do nas, ale możesz wypłacić środki w dowolnym momencie",
+    "transparency": "Transparentność",
+    "weDontRequireUpfrontFees": "Nie wymagamy żadnych opłat z góry i pobieramy jedynie opłatę za sukces"
+  },
+  "advantagesGraph": {
+    "chartOfTradingStatistics": "Wykres statystyk handlowych w porównaniu do benchmarku SPX",
+    "countriesCount": 30,
+    "countries": "+ krajów",
+    "weContinueToExpand": "Nieustannie poszerzamy nasze horyzonty ponad i poza",
+    "yearsCount": 4,
+    "years": "+ lata",
+    "yearsOfBlockchain": "4 lata doświadczenia w zakresie Blockchain, DeFi i aktywów cyfrowych",
+    "APYCount1": 56,
+    "APYCount2": 37,
+    "APY": "% APY",
+    "averageAnnualYield": "Średni roczny zysk, w oparciu o naszą historię handlową",
+    "startInvesting": "Rozpocznij inwestowanie"
+  },
+  "firstStepBlock": {
+    "stepOne": "Krok 1",
+    "installTheAppPart1": "Zainstaluj aplikację",
+    "installTheAppPart2": "",
+    "downloadAndInstallTheApp": "Pobierz i zainstaluj aplikację TSFC",
+    "getTheApp": "Pobierz aplikację",
+    "watchVideoGuide": "Obejrzyj przewodnik wideo"
+  },
+  "analysisBlock": {
+    "competitiveAnalysis": "Analiza konkurencyjna",
+    "smallDeposit": "Dostępność niewielkich depozytów",
+    "trustAndTransparency": "Zaufanie i transparentność",
+    "revolvesAroundClientsSuccess": "Obraca się wokół sukcesu klientów",
+    "noUserInvolvement": "Nie wymaga udziału użytkownika",
+    "noHiddenFees": "Bez ukrytych prowizji",
+    "copyTrading": "Copytrading",
+    "tradingSignals1": "Sygnały",
+    "tradingSignals2": "handlowe",
+    "professionalFunds1": "Fundusze",
+    "professionalFunds2": "profesjonalne"
+  },
+  "contactUsBlock": {
+    "contactUs": "Kontakt",
+    "enterYourName": "Wprowadź swoje imię",
+    "enterYourEmail": "Wprowadź swój adres e-mail",
+    "enterYourPhone": "+7 (915) 173-25-91",
+    "detailYourRequest": "Podaj szczegóły dotyczące przedmiotu zapytania lub propozycji",
+    "byClickingYouAgreeThePrivacy": "Kliknięcie przycisku oznacza akceptację polityki prywatności",
+    "send": "Wyślij",
+    "sending": "Wysyłanie...",
+    "requestSuccessMessage": "Wniosek został pomyślnie wysłany! Oczekiwany kontakt z menedżerem",
+    "requestErrorMessage": "Wystąpił błąd!",
+    "requestRepeatMessage": "Powtórz"
+  },
+  "faq": {
+    "back": "Powrót",
+    "learnMore": "Czytaj więcej",
+    "FAQ": "Często zadawane pytania",
+    "weCanBeTrustedQ": "1. Jak upewnić się, że można nam zaufać?",
+    "weCanBeTrustedA": "Nie trzeba nam ufać! Nie przelewasz do nas środków, a jedynie łączysz swoje istniejące konto na giełdzie poprzez protokół API bez zgody na wypłatę, jedynie z prawem do dokonywania transakcji w Twoim imieniu. Wybrana przez Ciebie giełda nadal będzie odpowiedzialna za bezpieczeństwo Twoich środków.",
+    "amoundOfMoneyToStartQ": "2. Jakiej kwoty potrzebuję, aby zacząć korzystać z aplikacji TSFC?",
+    "amoundOfMoneyToStartA": "Teraz nie potrzebujesz ogromnych oszczędności, aby zbudować portfel inwestycyjny. TSFC umożliwia korzystanie z produktu Prime z dowolną kwotą, ale warto pamiętać, że skuteczność mniejszych portfeli może się różnić, ponieważ pozwalają one na otwarcie mniejszej liczby transakcji.",
+    "howTheWorkIsGoingQ": "3. Jak mogę sprawdzić zakupione produkty i postęp prac?",
+    "howTheWorkIsGoingA": "Aby wyświetlić historię transakcji i bieżące pozycje w aplikacji TSFC, wykonaj następujące kroki:\n\n1. Zaloguj się do aplikacji TSFC.\n2. Przejdź do Produktu: Kliknij interesujący Cię Produkt.\n3. Wyświetl aktualne pozycje: Na ekranie zostaną wyświetlone wszystkie aktualne pozycje.\n4. Historia transakcji: Znajdź i kliknij przycisk „Historia transakcji”, aby otworzyć bardziej szczegółowe informacje o wszystkich dokonanych transakcjach, w tym daty, godziny, typy transakcji i wyniki.\n\nProces ten umożliwia śledzenie wyników transakcji i uzyskiwanie szczegółowych informacji na temat aktywności inwestycyjnej w dowolnym momencie.",
+    "howToPayMyFeeQ": "4. Jak mogę uiścić prowizję za współpracę z TSFC?",
+    "howToPayMyFeeA": "Za nasze usługi płacisz raz na kwartał za pośrednictwem naszej aplikacji. W aktywnej sekcji Prime znajduje się specjalny przycisk „Zapłać opłatę”, za pomocą którego można dokonać płatności. Jeśli opłata nie zostanie uiszczona na koniec miesiąca, konto zostanie automatycznie zawieszone. W przypadku problemów technicznych z płatnością za pośrednictwem aplikacji, nasz menedżer skontaktuje się z Tobą osobiście.",
+    "canIWithdrawPartOfMyFundsQ": "5. Czy mogę wypłacić część lub całość środków z konta wymiany?",
+    "canIWithdrawPartOfMyFundsA": "Tak, możesz wypłacić część lub całość kwoty w dowolnym momencie. Prosimy jednak o wcześniejsze powiadomienie nas o zamiarze wypłaty środków. Pomoże nam to lepiej zarządzać procesem i zapewni, że portfel zostanie zbilansowany w odpowiednim czasie.",
+    "whyTheTransactionHistoryNotShownQ": "6. Dlaczego historia transakcji nie jest jeszcze wyświetlana i kiedy będzie dostępna?",
+    "whyTheTransactionHistoryNotShownA": "W ciągu 24 godzin od podłączenia konta rozpocznie się proces tworzenia portfela inwestycyjnego. Nasz zespół rozpocznie zawieranie transakcji, które zostaną starannie dobrane w celu optymalizacji zysków. Gdy tylko pierwsza z tych transakcji zostanie zamknięta, historia transakcji będzie dostępna do wglądu. Będziesz mógł śledzić wszystkie działania i aktualizacje bezpośrednio na swoim koncie osobistym w aplikacji TSFC.",
+    "noEmailCodeQ": "7. Co powinienem zrobić, jeśli wiadomość e-mail z kodem nie pojawi się w mojej poczcie?",
+    "noEmailCodeA": "Sprawdź folder spamu (za pośrednictwem usługi poczty w przeglądarce, nie za pośrednictwem aplikacji). Jeśli problem nie ustąpi, skontaktuj się z naszym menedżerem w celu uzyskania dalszej pomocy.",
+    "chartIsNotDisplayingQ": "8. Dlaczego mój wykres nie jest wyświetlany w aplikacji TSFC?",
+    "chartIsNotDisplayingA": "Do wyświetlenia wykresu wymagana jest wystarczająca historia danych. Minimalny interwał wyświetlania wynosi 24 godziny. Jeśli wykres nadal nie jest wyświetlany po 24 godzinach lub występują inne problemy, skontaktuj się z naszym zespołem pomocy technicznej. Niezwłocznie pomożemy rozwiązać zaistniałą sytuację.",
+    "howToDepositFundsQ": "9. Jak wpłacić środki na konto po podłączeniu kluczy API?",
+    "howToDepositFundsA": "Aby dokonać wpłaty na konto, należy przelać środki na konto giełdowe lub subkonto powiązane z aplikacją za pomocą kluczy API. Upewnij się, że wysyłasz środki na konto połączone z TSFC. Dla wygody zaleca się korzystanie z USDT."
+  },
+  "Partners": {
+    "partnersTitle": "Wzmacniacz"
+  }
+}

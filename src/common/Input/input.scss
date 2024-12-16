@@ -1,0 +1,160 @@
+@import "../../assets/styles/colors";
+
+.input {
+  opacity: 0;
+  font-family: "PF Beau Sans Pro Regular", serif;
+  width: 100%;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid $secondary;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  transition: 0.5s ease;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 0;
+  transform-origin: left;
+  &--show {
+    animation: showInput 0.4s forwards;
+  }
+
+  &::placeholder {
+    font-family: "PF Beau Sans Pro Regular", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: $white;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $secondary;
+  }
+
+  &__error {
+    border-bottom: 1px solid $error;
+
+    &:focus {
+      border-bottom: 1px solid $error;
+    }
+  }
+
+  &__message {
+    display: none;
+
+    &-error {
+      position: absolute;
+      margin-top: 5px;
+      display: block;
+      color: $error;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}
+
+@for $i from 1 through 3 {
+  .input__wrapper:nth-child(#{$i}) .input--show {
+    animation-delay: calc(0.1s + #{$i * 0.3}s);
+  }
+}
+
+@keyframes showInput {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 1366px) {
+  .input {
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 7px;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__message {
+      &-error {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .input {
+    padding-bottom: 8px;
+    font-size: 10px;
+    line-height: 12px;
+
+    &::placeholder {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &__message {
+      &-error {
+        margin-top: 5px;
+        font-size: 10px;
+        line-height: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .input {
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 17px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__message {
+      &-error {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 932px) {
+  .input {
+    padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 14px;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__message {
+      &-error {
+        margin-top: 5px;
+        font-size: 10px;
+        line-height: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "src/assets/styles/colors";
+
+.header__wrapper {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 120px;
+  z-index: 1;
+}
+
+.burgerMenuWrapper {
+  display: none;
+  position: fixed;
+  z-index: 2;
+}
+
+.closeMenu {
+  display: none !important;
+}
+
+.hideMenu {
+  animation: hideMenu 0.7s ease 0s 1 normal forwards;
+}
+
+@media screen and (max-width: 1920px) {
+  .header {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .header {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .header {
+    height: 100vh;
+    background-color: $bg-switcher;
+    display: grid;
+    grid-template-areas:
+      "Login"
+      "Navbar"
+      "Language";
+    margin: 0;
+    padding-top: 20px;
+    &__right-part {
+      display: grid;
+    }
+  }
+  .burgerMenuWrapper {
+    display: block;
+    right: 20px;
+    top: 20px;
+  }
+  .showMenu {
+    animation: showMenu 0.7s ease 0s 1 normal forwards;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+    height: 8%;
+    transform: scaleX(0);
+    transform-origin: 100% 0%;
+    overflow: hidden;
+  }
+
+  50% {
+    height: 8%;
+    transform: scaleX(1);
+    transform-origin: 100% 0%;
+    overflow: hidden;
+  }
+
+  100% {
+    height: 100%;
+    transform: scaleX(1);
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes hideMenu {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    display: none;
+  }
+}

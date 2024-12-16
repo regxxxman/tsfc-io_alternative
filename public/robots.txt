@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /docs/privacy-policy.pdf
+Disallow: /docs/kyc-policy.pdf
+Disallow: /docs/terms-of-services.pdf
+
+Disallow: /docs/*

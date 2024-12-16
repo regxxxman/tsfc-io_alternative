@@ -1,0 +1,67 @@
+@import "src/assets/styles/colors";
+
+.languageSwitcher {
+  margin-left: auto;
+  display: flex;
+  border-radius: 100px;
+  background: $bg-switcher;
+  padding: 18px 29px;
+  grid-column-gap: 23px;
+  z-index: 1;
+}
+
+.languageButton {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  color: $primary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    color: $secondary;
+  }
+}
+
+.languageButton.activeTab {
+  color: $secondary;
+}
+
+@media screen and (max-width: 1660px) {
+  .languageSwitcher {
+    padding: 15px 22px;
+    grid-column-gap: 18px;
+  }
+  .languageButton {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .languageSwitcher {
+    padding: 12px 20px;
+    grid-column-gap: 13px;
+  }
+  .languageButton {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .languageSwitcher {
+    grid-area: Language;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    grid-column-gap: 20px;
+  }
+  .languageButton {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,157 @@
+@import "src/assets/styles/colors";
+
+.advantages {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 1200px;
+  }
+}
+
+.main {
+  &__button {
+    font-family: "PF Beau Sans Pro Regular", serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 11px;
+    color: $accent;
+    padding: 15px 19px;
+    background-color: $secondary;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    animation: moveButtonDown 0.4s forwards;
+    & .text {
+      display: inline-block;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    &:hover {
+      animation: moveButtonUp 0.4s forwards;
+    }
+
+    &:hover .text {
+      animation: moveTextUp 0.5s forwards, moveTextDown 0.5s 0.5s forwards;
+    }
+  }
+}
+
+@keyframes moveButtonUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes moveButtonDown {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveTextUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes moveTextDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .advantages {
+    &__section {
+      gap: 31px;
+    }
+  }
+  .main {
+    &__button {
+      padding: 11px 13px;
+      font-size: 12px;
+      line-height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .advantages {
+    &__section {
+      gap: 26px;
+    }
+  }
+  .main {
+    &__button {
+      padding: 10px 12px;
+      font-size: 10px;
+      line-height: 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .advantages {
+    &__section {
+      gap: 31px;
+    }
+  }
+  .main {
+    &__button {
+      padding: 11px 13px;
+      font-size: 12px;
+      line-height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .advantages {
+    &__section {
+      gap: 28px;
+    }
+  }
+  .main {
+    &__button {
+      padding: 10px 15px;
+      font-size: 12px;
+      line-height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .advantages {
+    &__section {
+      gap: 0;
+      & article:nth-child(2) {
+        margin: 100px 0 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+@import "src/assets/styles/colors";
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  padding: 47px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 433px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: $accent90;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 37px;
+  width: 100%;
+}
+
+.formPolicy {
+  opacity: 0;
+  color: $white;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 22px;
+  margin-bottom: 58px;
+  align-self: flex-start;
+  &--show {
+    animation: showContent 0.4s forwards;
+    animation-delay: 1.2s;
+  }
+}
+
+.button {
+  opacity: 0;
+  &--show {
+    animation: showContent 0.4s forwards;
+    animation-delay: 1.4s;
+  }
+}
+
+.formLink {
+  text-decoration: none;
+  color: $secondary;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formSendMessageWrapper {
+  position: absolute;
+  background-color: $accent90;
+  padding: 47px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 433px;
+  height: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.formMessage {
+  display: flex;
+  grid-column-gap: 15px;
+  align-items: center;
+}
+
+.formMessageText {
+  color: $white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.formRestart {
+  color: $secondary;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+@keyframes showContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1366px) {
+  .form {
+    padding: 32px 36px 34px 30px;
+    width: 385px;
+  }
+
+  .formSendMessageWrapper {
+    padding: 32px 36px 34px 30px;
+    width: 385px;
+    height: 304px;
+  }
+
+  .formInputs {
+    grid-row-gap: 23px;
+  }
+
+  .formPolicy {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 9px;
+    margin-bottom: 44px;
+  }
+
+  .formLink {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .form {
+    padding: 33px 40px 34px 40px;
+    width: 327px;
+  }
+
+  .formSendMessageWrapper {
+    padding: 33px 40px 34px 40px;
+    width: 327px;
+    height: 300px;
+  }
+
+  .formPolicy {
+    margin-top: 8px;
+    margin-bottom: 31px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    padding: 32px 36px 34px 30px;
+    width: 385px;
+  }
+
+  .formSendMessageWrapper {
+    padding: 32px 36px 34px 30px;
+    width: 385px;
+    height: 304px;
+  }
+
+  .formInputs {
+    grid-row-gap: 23px;
+  }
+
+  .formPolicy {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 9px;
+    margin-bottom: 44px;
+  }
+
+  .formLink {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 932px) {
+  .form {
+    padding: 30px 38px 30px 39px;
+    width: 289px;
+  }
+
+  .formSendMessageWrapper {
+    padding: 30px 38px 30px 39px;
+    width: 289px;
+    height: 295px;
+  }
+
+  .formInputs {
+    grid-row-gap: 30px;
+  }
+
+  .formPolicy {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .form {
+    padding: 30px 20px;
+  }
+
+  .formSendMessageWrapper {
+    padding: 30px 20px;
+    width: 289px;
+    height: 304px;
+  }
+}

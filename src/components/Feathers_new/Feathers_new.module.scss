@@ -1,0 +1,35 @@
+.feathers {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: -100px;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1366px) {
+  .feathers {
+    width: 164px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .feathers {
+    width: 173px;
+    height: 211px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feathers {
+    width: 164px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 932px) {
+  .feathers {
+    width: 150px;
+    height: 184px;
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "form": {
+    "nameLabel": "Enter your name",
+    "emailLabel": "Enter your email",
+    "phoneLabel": "Enter your phone number",
+    "commentLabel": "Provide detailed information on the subject of your request or proposal",
+    "policyText": "By clicking the button, you agree to the",
+    "policyLink": "privacy policy",
+    "successMessage": "Request successfully sent! Expect contact from a manager.",
+    "sendButton": "Send",
+    "sendingButton": "Sending...",
+    "error": "Required field",
+    "errorMessage": "An error occurred!",
+    "restartSend": "Retry."
+  },
+  "financialServices": {
+    "title": "How can we help you?",
+    "services": {
+      "trade": "Trading: we offer you a tool that allows you to reap all the benefits of a professional team of traders, customizable in just a few clicks.",
+      "portfolio": "Portfolio Formation: Optimization and composition of the client's investment portfolio to achieve maximum efficiency and alignment with goals.",
+      "familyOffice": "Family Office Service: development of financial planning strategies, including budget management, wealth accumulation, retirement planning, assistance and support in executing worldwide payments.",
+      "educationalPrograms": "Individual educational programs in the field of digital assets, research, and due diligence."
+    }
+  },
+  "footer": {
+    "supportLink": "Support",
+    "riskWarningLink": "Risk Warning",
+    "userAgreementLink": "Privacy Policy",
+    "kycPolicyLink": "AML/KYC Policy",
+    "cookiePolicyLink": "Cookie Policy",
+    "termsOfServices": "Terms of Services"
+  },
+  "notFound": {
+    "errorMessage": "Error. Try going back to the ",
+    "homeLinkText": "home page",
+    "contactText": "or contact us through messengers:"
+  },
+  "modal": {
+    "buttonText": "Allow all cookies",
+    "declineButtonText": "Reject all cookies",
+    "cookieTitle": "Cookies managing",
+    "cookieText": "This website uses cookies. Cookies remember your actions and preferences for a better online experience."
+  },
+  "validationErrors": {
+    "fieldRequired": "This field is required",
+    "fieldIncorrect": "Invalid field"
+  },
+  "navbar": {
+    "home": "HOME",
+    "about": "ABOUT SERVICE",
+    "howToStart": "HOW TO START",
+    "faq": "FAQ",
+    "contactUs": "CONTACT US"
+  },
+  "login": {
+    "getTheApp": "Get the App",
+    "or": "or",
+    "login": "Login"
+  },
+  "banner": {
+    "tradingService": "TRADING SERVICE",
+    "youDontNeedTo": "YOU DON’T NEED TO ",
+    "trust": "TRUST"
+  },
+  "basedInSw": "Based in Switzerland",
+  "cookies": {
+    "cookiesHeading": "Cookies managing",
+    "cookiesText": "This website uses cookies. Cookies remember your actions and preferences for a better online experience.",
+    "cookiesAllow": "Allow all cookies",
+    "cookiesReject": "Reject all cookies"
+  },
+  "moneyPathBlock": {
+    "yourMoneyStaysWithYou1": "YOUR ",
+    "yourMoneyStaysWithYou2": "MONEY STAYS ",
+    "yourMoneyStaysWithYou3": "WITH YOU",
+    "client": "Client",
+    "exchange": "Exchange",
+    "apiKeys": "API Keys"
+  },
+  "descriptionBlock": {
+    "expectedROITitle": "Expected ROI",
+    "expectedROI": "38% APY*",
+    "minimumEntryAmountTitle": "Minimum entry amount",
+    "minimumEntryAmount": "From",
+    "feeTitle": "Fee",
+    "fee": "(of the profit)",
+    "investmentPeriodTitle": "Investment period",
+    "investmentPeriodFrom": "From",
+    "investmentPeriod": "3 months",
+    "TSFCDescriptionFirstPart": "is a classic trading service in the digital asset market. When investing through TSFC, clients grant the right to execute transactions and operations with their funds on a cryptocurrency exchange.",
+    "TSFCDescriptionSecondPart": "It's important to note that we work with the client's API keys, without direct access to the funds and without the ability to withdraw.",
+    "TSFCDescriptionSub": "Calculated based on historical returns, but positive returns in the past do not guarantee returns in the future",
+    "howToStart": "How to start"
+  },
+  "advantagesBlock": {
+    "whyUs": "Why choose us?",
+    "safety": "Safety",
+    "theMoneyStaysWithYou": "The money stays with your custodian, you don't pass the money directly to us",
+    "convenience": "Convenience",
+    "allTradingDecisions": "All trading decisions are on us, but you can withdraw funds at any time",
+    "transparency": "Transparency",
+    "weDontRequireUpfrontFees": "We do not require any upfront fees and only charge a success fee"
+  },
+  "advantagesGraph": {
+    "chartOfTradingStatistics": "Chart of trading statistics compared to the SPX benchmark",
+    "countriesCount": 30,
+    "countries": "+ countries",
+    "weContinueToExpand": "We continue to expand our horizons above and beyond",
+    "yearsCount": 4,
+    "years": "+ years",
+    "yearsOfBlockchain": "4 years of Blockchain, DeFi & Digital Assets expertise",
+    "APYCount1": 56,
+    "APYCount2": 37,
+    "APY": "% APY",
+    "averageAnnualYield": "Average annual yield, based on our trading history",
+    "startInvesting": "Start Investing"
+  },
+  "firstStepBlock": {
+    "stepOne": "Step 1",
+    "installTheAppPart1": "Install the",
+    "installTheAppSpan": " TSFC ",
+    "installTheAppPart2": "app",
+    "downloadAndInstallTheApp": "Download and install the TSFC app",
+    "getTheApp": "Get the App",
+    "watchVideoGuide": "Watch video guide"
+  },
+  "secondStepBlock": {
+    "stepOne": "Step 2",
+    "installTheAppPart1": "Register an",
+    "installTheAppSpan": " Account",
+    "installTheAppPart2": "\n",
+    "downloadAndInstallTheApp": "Enter your email, referral code (if any), \nverification code, and personal details",
+    "getTheApp": "Get the App",
+    "watchVideoGuide": "Watch video guide"
+  },
+  "thirdStepBlock": {
+    "stepOne": "Step 3",
+    "installTheAppPart1": "KYC ",
+    "installTheAppSpan": "Verification",
+    "installTheAppPart2": "\n",
+    "downloadAndInstallTheApp": "Complete address and passport verification; skip the residence permit step if not applicable",
+    "getTheApp": "Get the App",
+    "watchVideoGuide": "Watch video guide"
+  },
+  "fourthStepBlock": {
+    "stepOne": "Step 4",
+    "installTheAppPart1": "Connect ",
+    "installTheAppSpan": "API Keys",
+    "installTheAppPart2": "\n",
+    "downloadAndInstallTheApp": "Obtain and enter your API KEY and SECRET KEY for the Prime product",
+    "getTheApp": "Get the App",
+    "watchVideoGuide": "Watch video guide"
+  },
+  "fiveStepBlock": {
+    "stepOne": "Step 5",
+    "installTheAppPart1": "Bonus Program (",
+    "installTheAppSpan": "Quills",
+    "installTheAppPart2": ")",
+    "downloadAndInstallTheApp": "Earn Quills even without verification, participating in the loyalty program",
+    "getTheApp": "Get the App",
+    "watchVideoGuide": "Watch video guide"
+  },
+  "finalStepBlock": {
+    "stepOne": "Final Step",
+    "installTheAppPart1": "\n",
+    "installTheAppSpan": "Ready",
+    "installTheAppPart2": " to Use",
+    "downloadAndInstallTheApp": "The app is ready to use!  Contact support if you need assistance!",
+    "getTheApp": "Get the App",
+    "watchVideoGuide": "Watch video guide"
+  },
+  "analysisBlock": {
+    "competitiveAnalysis": "Competitive Analysis",
+    "smallDeposit": "Small deposit availability",
+    "trustAndTransparency": "Trust and transparency",
+    "revolvesAroundClientsSuccess": "Revolves around clients success",
+    "noUserInvolvement": "No user involvement",
+    "noHiddenFees": "No hidden fees",
+    "copyTrading": "Copytrading",
+    "tradingSignals1": "Trading",
+    "tradingSignals2": "Signals",
+    "professionalFunds1": "Professional",
+    "professionalFunds2": "funds"
+  },
+  "contactUsBlock": {
+    "contactUs": "Contact Us",
+    "enterYourName": "Enter your name",
+    "enterYourEmail": "Enter your e-mail address",
+    "enterYourPhone": "+7 (915) 173-25-91",
+    "detailYourRequest": "Detail the topic of your request or proposal",
+    "byClickingYouAgreeThePrivacy1": "By clicking on the button, you agree to the",
+    "byClickingYouAgreeThePrivacy2": "privacy policy",
+    "send": "Send",
+    "sending": "Sending...",
+    "requestSuccessMessage": "Request successfully sent! Expect contact with manager",
+    "requestErrorMessage": "An error has occurred!",
+    "requestRepeatMessage": "Repeat"
+  },
+  "faq": {
+    "back": "Back",
+    "learnMore": "Learn more",
+    "FAQ": "Frequently Asked Questions",
+    "weCanBeTrustedQ": "1. How to make sure we can be trusted?",
+    "weCanBeTrustedA": "We don't need to be trusted! You do not transfer funds to us, but only connect your existing account on the exchange through the API protocol without withdrawal permission, only with the right to make transactions on your behalf. Your chosen exchange will continue to be responsible for the safety of your funds.",
+    "amoundOfMoneyToStartQ": "2. What amount of money do I need to start using the TSFC app?",
+    "amoundOfMoneyToStartA": "Now you don't need huge savings to build up an investment portfolio. TSFC allows you to use its Prime product with any amount, but it is worth keeping in mind that the effectiveness of smaller portfolios may differ as they allow fewer trades to be opened.",
+    "howTheWorkIsGoingQ": "3. How do I see what you've purchased and how the work is going?",
+    "howTheWorkIsGoingA": "To view your transaction history and current positions in the TSFC app, follow these steps:\n\n1. Log in to the TSFC app.\n2. Go to Product: Click on the Product you are interested in.\n3. View Current Positions: The screen will display all current positions.\n4. Transaction History: Locate and click on the “Transaction History” button to open more detailed information on all transactions made, including dates, times, transaction types, and results.\n\nThis process allows you to keep track of how trades are performing and get detailed information about your investment activity at any time.",
+    "howToPayMyFeeQ": "4. How do I pay my fee when I work with TSFC?",
+    "howToPayMyFeeA": "You pay for our services once a quarter through our app. There you will find a special “Pay Fee” button in your active Prime section, which you can use to make your payment. If the fee is not paid at the end of the month, your account will be automatically suspended. In case of technical problems with payment through the app, our manager will contact you personally.",
+    "canIWithdrawPartOfMyFundsQ": "5. Can I withdraw part or all of my funds from my exchange account?",
+    "canIWithdrawPartOfMyFundsA": "Yes, you can withdraw part or the whole amount at any time. However, we ask you to notify us in advance of your intention to withdraw funds. This will help us better manage the process and ensure that your portfolio is balanced in a timely manner.",
+    "whyTheTransactionHistoryNotShownQ": "6. Why is transaction history not yet shown and when will it be become available?",
+    "whyTheTransactionHistoryNotShownA": "Within 24 hours after connecting your account, the process of forming your investment portfolio will begin. Our team will start making trades that will be carefully selected to optimize your profits. As soon as the first of these trades is closed, your transaction history will be available for viewing. You will be able to track all activity and updates directly in your personal account in the TSFC app.",
+    "noEmailCodeQ": "7. What should I do if the email with the code doesn't appear in my email?",
+    "noEmailCodeA": "Check your spam folder (via the mail service in your browser, not via the app). If the problem persists, contact our manager for further assistance.",
+    "chartIsNotDisplayingQ": "8. Why is my chart not displaying in the TSFC app?",
+    "chartIsNotDisplayingA": "Sufficient data history is required to display a graph. The minimum interval for display is 24 hours. If the chart is still not displayed after 24 hours or there are other problems, please contact our support team. We will promptly help you to resolve the situation.",
+    "howToDepositFundsQ": "9. How to deposit funds on account after connecting API keys?",
+    "howToDepositFundsA": "To deposit to the account, you need to transfer funds to the exchange account or sub-account linked to the application via API keys. Make sure that you send funds to the account that is linked to TSFC. For convenience, it is recommended to use USDT."
+  },
+  "Partners": {
+    "partnersTitle": "Partners"
+  }
+}

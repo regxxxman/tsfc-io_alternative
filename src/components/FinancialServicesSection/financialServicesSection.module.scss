@@ -1,0 +1,256 @@
+@import "src/assets/styles/colors";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 1224px;
+  margin-bottom: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    &-icon {
+      display: flex;
+      align-items: center;
+      width: 34px;
+      text-decoration: none;
+      color: $secondary;
+      margin-right: 30px;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    height: 551px;
+  }
+  &__image {
+    opacity: 0;
+    display: flex;
+    width: 613px;
+    height: 551px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    &--show {
+      animation: showImage 0.4s forwards;
+      animation-delay: 0.2s;
+    }
+  }
+  &__blur1 {
+    position: absolute;
+    width: 287px;
+    height: 283.5px;
+    right: 175px;
+    top: 32px;
+
+    z-index: -1;
+    background: linear-gradient(208.12deg, #013837 13.01%, #54f68b 90.55%);
+    filter: blur(196.453px);
+  }
+  &__blur2 {
+    position: absolute;
+    width: 204px;
+    height: 204px;
+    right: 470px;
+    top: 220px;
+    z-index: -1;
+    background: linear-gradient(208.12deg, #013837 13.01%, #54f68b 90.55%);
+    filter: blur(250px);
+  }
+  &__blur3 {
+    position: absolute;
+    width: 357.34px;
+    height: 352.99px;
+    top: 120.35px;
+    right: 69px;
+
+    z-index: -1;
+    background: linear-gradient(208.12deg, #013837 13.01%, #54f68b 90.55%);
+    filter: blur(216px);
+  }
+  &__switzerland {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f5f5f5;
+  }
+}
+
+.formHeading {
+  font-family: "PF Beau Sans Pro Regular", serif;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 49px;
+  margin-right: 45px;
+}
+
+@keyframes showImage {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1366px) {
+  .contact {
+    max-width: 824px;
+    margin-bottom: 175px;
+    &__header {
+      margin-bottom: 15px;
+      &-icon {
+        width: 23px;
+        margin-right: 20px;
+      }
+    }
+    &__blur1 {
+      display: none;
+    }
+    &__blur2 {
+      display: none;
+    }
+    &__blur3 {
+      display: none;
+    }
+    &__switzerland {
+      font-size: 14px;
+      line-height: 10px;
+    }
+    &__block {
+      height: 370px;
+    }
+    &__image {
+      width: 370px;
+      height: 370px;
+    }
+  }
+
+  .formHeading {
+    font-size: 27px;
+    line-height: 32px;
+    margin-right: 23px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact {
+    max-width: 817px;
+    &__block {
+      height: 367px;
+    }
+    &__image {
+      width: 408px;
+      height: 367px;
+    }
+    &__blur1 {
+      display: block;
+      position: absolute;
+      width: 136px;
+      height: 136px;
+      right: 312px;
+      top: 100px;
+
+      background: linear-gradient(208.12deg, #013837 13.01%, #54f68b 90.55%);
+      filter: blur(166.667px);
+    }
+    &__blur2 {
+      display: block;
+      position: absolute;
+      width: 191.33px;
+      height: 189px;
+      right: 21px;
+      top: 70px;
+
+      background: linear-gradient(208.12deg, #013837 13.01%, #54f68b 90.55%);
+      filter: blur(130.969px);
+    }
+    &__blur3 {
+      display: block;
+      width: 238.23px;
+      height: 235.32px;
+      top: 33px;
+      right: 45px;
+
+      background: linear-gradient(208.12deg, #013837 13.01%, #54f68b 90.55%);
+      filter: blur(144.969px);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    &__block {
+      height: 370px;
+    }
+    &__image {
+      width: 370px;
+      height: 370px;
+    }
+    &__blur1 {
+      display: none;
+    }
+    &__blur2 {
+      display: none;
+    }
+    &__blur3 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 932px) {
+  .contact {
+    max-width: 730px;
+    margin-bottom: 100px;
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__switzerland {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &__block {
+      height: 364px;
+    }
+    &__image {
+      width: 364px;
+      height: 364px;
+    }
+  }
+
+  .formHeading {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 28px;
+  }
+}
+
+@media (max-width: 730px) {
+  .contact {
+    max-width: 330px;
+    margin-bottom: 100px;
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,367 @@
+@import "../../assets/styles/colors";
+
+.modal {
+  position: fixed;
+  bottom: 120px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 2;
+
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.modalContent {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: $bg-modal;
+  backdrop-filter: blur(25px);
+  padding: 20px 30px;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  max-width: 831px;
+
+  &.open {
+    transform: scale(1);
+  }
+}
+
+.buttonAccess.button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $secondary;
+
+  &:hover,
+  &:active {
+    background: $secondary;
+    color: $accent;
+  }
+}
+
+.buttonDecline.button {
+  border: 1px solid $error;
+  color: $error;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 20px;
+  letter-spacing: 0em;
+
+  &:hover,
+  &:active {
+    background: $error;
+    color: $white;
+  }
+}
+
+.buttonWrapperClasses {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 28px;
+}
+
+.cookieTitle {
+  font-family: "PF Beau Sans Pro Book", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 5px;
+}
+
+.cookieTextWrapper {
+  margin-right: 28px;
+}
+
+.cookieText {
+  font-family: "PF Beau Sans Pro Regular", serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19px;
+  max-width: 388px;
+}
+
+.cookieContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.overlayclass {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1920px) {
+  .modal {
+    bottom: 70px;
+  }
+
+  .modalContent {
+    max-width: 753px;
+  }
+
+  .buttonAccess.button {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .buttonDecline.button {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .buttonWrapperClasses {
+    grid-column-gap: 27px;
+  }
+
+  .cookieTitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cookieText {
+    font-size: 13px;
+    line-height: 17px;
+    max-width: 339px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .modal {
+    bottom: 80px;
+  }
+
+  .modalContent {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 18px 26px;
+    max-width: 651px;
+  }
+
+  .buttonAccess.button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 18px;
+  }
+
+  .buttonDecline.button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 18px;
+  }
+
+  .buttonWrapperClasses {
+    grid-column-gap: 23px;
+  }
+
+  .cookieTitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .cookieTextWrapper {
+    margin-right: 23px;
+  }
+
+  .cookieText {
+    font-size: 11px;
+    line-height: 14px;
+    max-width: 293px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .modal {
+    bottom: 63px;
+  }
+
+  .modalContent {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 15px 20px;
+    max-width: 534px;
+  }
+
+  .buttonAccess.button {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 7px 14px;
+  }
+
+  .buttonDecline.button {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 7px 14px;
+  }
+
+  .buttonWrapperClasses {
+    grid-column-gap: 20px;
+  }
+
+  .cookieTitle {
+    font-size: 10px;
+    line-height: 7px;
+    margin-bottom: 10px;
+  }
+
+  .cookieTextWrapper {
+    margin-right: 20px;
+  }
+
+  .cookieText {
+    font-size: 9px;
+    line-height: 10px;
+    max-width: 243px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modal {
+    bottom: 80px;
+  }
+
+  .modalContent {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 18px 26px;
+    max-width: 651px;
+  }
+
+  .buttonAccess.button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 18px;
+  }
+
+  .buttonDecline.button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 18px;
+  }
+
+  .buttonWrapperClasses {
+    grid-column-gap: 23px;
+  }
+
+  .cookieTitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .cookieTextWrapper {
+    margin-right: 23px;
+  }
+
+  .cookieText {
+    font-size: 11px;
+    line-height: 14px;
+    max-width: 293px;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .modal {
+    bottom: 20px;
+  }
+
+  .modalContent {
+    border-radius: 5px;
+    padding: 22px 44px;
+    max-width: 932px;
+    justify-content: space-between;
+  }
+
+  .buttonAccess.button {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 6px 28px;
+  }
+
+  .buttonDecline.button {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 6px 28px;
+  }
+
+  .buttonWrapperClasses {
+    grid-column-gap: 20px;
+  }
+
+  .cookieTitle {
+    font-size: 14px;
+    line-height: 10px;
+    margin-bottom: 15px;
+  }
+
+  .cookieTextWrapper {
+    margin-right: 0;
+  }
+
+  .cookieText {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 538px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .modal {
+    bottom: 20px;
+    left: 0;
+  }
+
+  .modalContent {
+    padding: 20px 40px;
+    max-width: 430px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .buttonAccess.button {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 6px 28px;
+  }
+
+  .buttonDecline.button {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 6px 28px;
+  }
+
+  .buttonWrapperClasses {
+    grid-column-gap: 44px;
+    margin-top: 15px;
+  }
+
+  .cookieTitle {
+    font-size: 14px;
+    line-height: 10px;
+    margin-bottom: 15px;
+  }
+
+  .cookieTextWrapper {
+    margin-right: 0;
+  }
+
+  .cookieText {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 350px;
+  }
+}

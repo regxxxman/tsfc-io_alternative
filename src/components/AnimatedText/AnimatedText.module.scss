@@ -1,0 +1,19 @@
+@import "src/assets/styles/colors";
+
+.animated-text {
+  // display: inline-block;
+  visibility: hidden;
+  transition: visibility 0.5s ease-in-out;
+  // white-space: pre-wrap;
+  word-break: break-word;
+  // font-family: "Courier New", monospace;
+
+  &.visible {
+    visibility: visible;
+  }
+
+  .char {
+    display: inline-block;
+    text-align: center;
+  }
+}

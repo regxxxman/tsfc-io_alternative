@@ -1,0 +1,17 @@
+@import "src/assets/styles/colors";
+
+.background {
+  position: fixed;
+  width: 3839px;
+  height: 3913px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/public/images/bgSquares.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  transform: translateZ(0);
+  will-change: transform;
+}

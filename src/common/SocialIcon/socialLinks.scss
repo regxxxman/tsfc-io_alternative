@@ -1,0 +1,61 @@
+@import "../../assets/styles/colors";
+
+.socialLinks {
+  cursor: pointer;
+  color: $secondary;
+  width: 25px;
+  height: 25px;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+@media (max-width: 1366px) {
+  .socialLinks {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .socialLinks {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .socialLinks {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 932px) {
+  .socialLinks {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 730px) {
+  .socialLinks {
+    width: 22px;
+    height: 22px;
+  }
+}
+// @media (max-width: 525px) {
+
+//   .socialLinks {
+//     margin-right: 10px;
+//   }
+// }
+
+// @media (max-width: 375px) {
+
+//   .socialLinks {
+//     width: 20px;
+//     height: 20px;
+//   }
+// }

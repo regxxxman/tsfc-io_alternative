@@ -1,0 +1,450 @@
+@import "src/assets/styles/colors";
+
+.analysis {
+  display: flex;
+  max-width: 1120px;
+  height: 550px;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 225px;
+  &__title {
+    font-family: "PF Beau Sans Pro Regular", serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 36px;
+    max-width: 227px;
+    padding: 21px 0;
+    color: $primary;
+    animation-delay: 0.2s;
+  }
+  &__row {
+    opacity: 0;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $primary;
+    &:nth-child(1) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.7s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.8s;
+    }
+    &--show {
+      animation: showRowHeading 0.4s forwards;
+    }
+  }
+  &__column {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-card2;
+    border-radius: 20px;
+    padding: 34px 0 52px;
+    &:nth-child(2) {
+      animation-delay: 1s;
+    }
+    &:nth-child(3) {
+      width: 190px;
+      animation-delay: 1.2s;
+    }
+    &:nth-child(4) {
+      width: 230px;
+      animation-delay: 1.4s;
+    }
+    &:nth-child(5) {
+      width: 230px;
+      animation-delay: 1.6s;
+    }
+    &--show {
+      animation: showColumn 0.8s forwards;
+    }
+    &-rows {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 100%;
+      background-color: $bg-card2;
+      border-radius: 20px;
+      padding: 60px 47px 52px;
+    }
+    &-rows-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__column-heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: auto;
+    &--green {
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      color: $secondary;
+      text-align: justify;
+      padding: 0 30px;
+      margin-bottom: auto;
+    }
+  }
+  &__cells {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+  &__cell-wrapper {
+    opacity: 0;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 8px;
+    &--show {
+      animation: showCell 0.4s forwards;
+    }
+    &--green {
+      background-color: $green20;
+      box-shadow: 0px 0px 14px 0px #00ff574d;
+    }
+    &--red {
+      background-color: $red20;
+      box-shadow: 0px 0px 6px 0px #ff002e4d;
+    }
+  }
+  &__cell {
+    width: 12px;
+    height: 13px;
+    border-radius: 100px;
+    &--green {
+      background-color: $secondary;
+    }
+    &--red {
+      background-color: $error;
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .analysis__column:nth-child(2) .analysis__cell-wrapper:nth-child(#{$i}) {
+    animation-delay: calc(1.3s + #{$i * 0.1}s);
+  }
+  .analysis__column:nth-child(3) .analysis__cell-wrapper:nth-child(#{$i}) {
+    animation-delay: calc(1.8s + #{$i * 0.1}s);
+  }
+  .analysis__column:nth-child(4) .analysis__cell-wrapper:nth-child(#{$i}) {
+    animation-delay: calc(2.3s + #{$i * 0.1}s);
+  }
+  .analysis__column:nth-child(5) .analysis__cell-wrapper:nth-child(#{$i}) {
+    animation-delay: calc(2.8s + #{$i * 0.1}s);
+  }
+}
+
+@keyframes showRowHeading {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showColumn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showCell {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .analysis {
+    max-width: 823px;
+    height: 405px;
+    gap: 9px;
+    margin-top: 175px;
+    &__title {
+      font-size: 27px;
+      line-height: 25px;
+      max-width: 161px;
+      padding: 17px 0;
+    }
+    &__row {
+      font-size: 14px;
+      line-height: 12px;
+    }
+    &__column {
+      padding: 24px 0 39px;
+      &:nth-child(3) {
+        width: 139px;
+      }
+      &:nth-child(4) {
+        width: 168px;
+      }
+      &:nth-child(5) {
+        width: 168px;
+      }
+      &-rows {
+        padding: 44px 40px 44px 30px;
+      }
+    }
+    &__column-heading {
+      font-size: 14px;
+      line-height: 16px;
+      &--green {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0 22px;
+      }
+    }
+    &__cells {
+      gap: 36px;
+    }
+    &__cell-wrapper {
+      padding: 6px;
+    }
+    &__cell {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .analysis {
+    max-width: 746px;
+    height: 367px;
+    gap: 7px;
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      max-width: 143px;
+      padding: 16px 0;
+    }
+    &__row {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    &__column {
+      padding: 22px 0 35px;
+      &:nth-child(3) {
+        width: 126px;
+      }
+      &:nth-child(4) {
+        width: 153px;
+      }
+      &:nth-child(5) {
+        width: 153px;
+      }
+      &-rows {
+        padding: 40px 36px 35px;
+      }
+    }
+    &__column-heading {
+      font-size: 12px;
+      line-height: 14px;
+      &--green {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 20px;
+      }
+    }
+    &__cells {
+      gap: 33px;
+    }
+    &__cell-wrapper {
+      padding: 5px;
+    }
+    &__cell {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .analysis {
+    max-width: 823px;
+    height: 405px;
+    gap: 9px;
+    margin-top: 175px;
+    &__title {
+      font-size: 27px;
+      line-height: 25px;
+      max-width: 161px;
+      padding: 17px 0;
+    }
+    &__row {
+      font-size: 14px;
+      line-height: 12px;
+    }
+    &__column {
+      padding: 24px 0 39px;
+      &:nth-child(3) {
+        width: 139px;
+      }
+      &:nth-child(4) {
+        width: 168px;
+      }
+      &:nth-child(5) {
+        width: 168px;
+      }
+      &-rows {
+        padding: 44px 40px 44px 30px;
+      }
+    }
+    &__column-heading {
+      font-size: 14px;
+      line-height: 16px;
+      &--green {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0 22px;
+      }
+    }
+    &__cells {
+      gap: 36px;
+    }
+    &__cell-wrapper {
+      padding: 6px;
+    }
+    &__cell {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .analysis {
+    max-width: 730px;
+    height: 360px;
+    gap: 7px;
+    margin-top: 100px;
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      max-width: 143px;
+      padding: 15px 0;
+    }
+    &__row {
+      font-size: 12x;
+      line-height: 12px;
+    }
+    &__column {
+      padding: 20px 0 33px;
+      &:nth-child(3) {
+        width: 123px;
+      }
+      &:nth-child(4) {
+        width: 150px;
+      }
+      &:nth-child(5) {
+        width: 150px;
+      }
+      &-rows {
+        padding: 38px 36px 40px 26px;
+      }
+    }
+    &__column-heading {
+      font-size: 12px;
+      line-height: 12px;
+      &--green {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 0 20px;
+      }
+    }
+    &__cells {
+      gap: 32px;
+    }
+    &__cell-wrapper {
+      padding: 5px;
+    }
+    &__cell {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .analysis {
+    max-width: 326px;
+    height: 210px;
+    gap: 5px;
+    margin-top: 100px;
+    &__title {
+      font-size: 12px;
+      line-height: 12px;
+      max-width: 72px;
+      padding: 6px 0;
+    }
+    &__row {
+      font-size: 10px;
+      line-height: 10px;
+    }
+    &__column {
+      border-radius: 4px;
+      padding: 10px 0 13px;
+      &:nth-child(3) {
+        width: 66px;
+      }
+      &:nth-child(4) {
+        width: 45px;
+      }
+      &:nth-child(5) {
+        width: 67px;
+      }
+      &-rows {
+        padding: 10px 5px 15px 10px;
+      }
+    }
+    &__column-heading {
+      font-size: 7px;
+      line-height: 10px;
+      &--green {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 0 5px;
+      }
+    }
+    &__cells {
+      gap: 26px;
+    }
+    &__cell-wrapper {
+      padding: 3px;
+    }
+    &__cell {
+      width: 4px;
+      height: 4px;
+    }
+  }
+}
