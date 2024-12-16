@@ -6,9 +6,10 @@ import Banner from "@components/Banner/Banner";
 import FinancialServicesSection from "@components/FinancialServicesSection/FinancialServicesSection";
 
 import MainLogo from "@/components/MainLogo/MainLogo";
-import MoneyPathBlock from "@/components/MoneyPathBlock/MoneyPathBlock";
-import DescriptionBlock from "@/components/DescriptionBlock/DescriptionBlock";
-import AdvantagesSection from "@/components/AdvantagesSection/AdvantagesSection";
+// import MoneyPathBlock from "@/components/MoneyPathBlock/MoneyPathBlock";
+// import DescriptionBlock from "@/components/DescriptionBlock/DescriptionBlock";
+// import AdvantagesSection from "@/components/AdvantagesSection/AdvantagesSection";
+import ScrollBlock from "@/components/ScrollBlock/ScrollBlock";
 import AnalysisBlock from "@/components/AnalysisBlock/AnalysisBlock";
 import FaqBlock from "@/components/FaqBlock/FaqBlock";
 // import FirstStepBlock from "@/components/FirstStepBlock/FirstStepBlock";
@@ -42,9 +43,10 @@ const HomePage = ({ lang }: { lang: string }) => {
       <BackgroundDivider />
       {/*<ParallaxBackground />*/}
       <ParallaxOnStart />
-      <MoneyPathBlock />
-      <DescriptionBlock />
-      <AdvantagesSection />
+      <ScrollBlock /> 
+      {/* <MoneyPathBlock /> */}
+      {/* <DescriptionBlock /> */}
+      {/* <AdvantagesSection /> */}
       <PartnersBlock />
       <StepBlocks />
       {/* <FirstStepBlock /> */}

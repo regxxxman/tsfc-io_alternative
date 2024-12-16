@@ -55,31 +55,21 @@ const Navbar = ({ setIsMenuOpen }: Props) => {
       if (!element) return;
 
       const handleScrollTrigger = (direction: "enter" | "enterBack") => {
+        if (direction) {
+          // console.log();
+        }
         setCurrentRoute(id);
-        
-        // Удаляем активный класс с других элементов
         document
           .querySelectorAll(".navbar__item--active")
           .forEach((el) => el.classList.remove("navbar__item--active"));
-        
-        // Добавляем активный класс текущему элементу
         ref.current?.classList.add("navbar__item--active");
-      
-        // Меняем анимацию в зависимости от направления
-        const animationProps = direction === "enter" ? {
+
+        gsap.to(".selection_new", {
           marginLeft: getWidthMargin(id).marginLeft,
           width: getWidthMargin(id).width - 5,
           duration: 0.1,
           ease: "power2.out",
-        } : {
-          marginLeft: getWidthMargin(id).marginLeft + 10, // немного смещаем назад, например
-          width: getWidthMargin(id).width - 10, // уменьшаем ширину при возвращении
-          duration: 0.3,
-          ease: "power2.in",
-        };
-      
-        // Применяем анимацию
-        gsap.to(".selection_new", animationProps);
+        });
       };
 
       ScrollTrigger.create({
@@ -120,12 +110,11 @@ const Navbar = ({ setIsMenuOpen }: Props) => {
             <a
               ref={ref}
               href={`#${id}`}
-              className={`navbar__item ${currentRoute === id ? "navbar__item--active" : ""}`}
+              className="navbar__item"
               onClick={() => handleClickLink(id)}
             >
               {t(`navbar.${name}`)}
             </a>
-
             {id !== "financialServicesSectionId" && <div className="navbar__divider"></div>}
           </li>
         ))}
