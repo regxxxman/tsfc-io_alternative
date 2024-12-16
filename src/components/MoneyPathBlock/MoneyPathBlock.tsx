@@ -23,7 +23,7 @@ const MoneyPathBlock = () => {
         end: "bottom bottom",
         onLeave: () => {
           console.log("Kek");
-          location.hash = "about"
+          // location.hash = "about"
         }
       })
     },[])
