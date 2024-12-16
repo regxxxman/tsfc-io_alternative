@@ -16,6 +16,8 @@ const Navbar = ({ setIsMenuOpen }: Props) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
+  if (currentRoute) {} //удалить
+
   const refs = useRef([
     { id: "bannerId", name: "home" },
     { id: "about", name: "about" },
