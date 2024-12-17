@@ -48,6 +48,7 @@ const ScrollBlock = () => {
       style={{
         display: "flex",
         overflowX: "hidden", // Скрываем горизонтальный скролл
+        height: "400vh"
       }}
     >
       <div id="panel" className={style.panel} style={{ flex: "0 0 100vw" }}>
