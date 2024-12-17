@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DescriptionBlock from "../DescriptionBlock/DescriptionBlock";
 import MoneyPathBlock from "../MoneyPathBlock/MoneyPathBlock";
 import AdvantagesBlock from "../AdvantagesBlock/AdvantagesBlock";
-// import style from "./ScrollBlock.module.scss";
+import style from "./ScrollBlock.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +16,7 @@ const ScrollBlock = () => {
     if (!panelsContainer) return;
 
     // Найдите все панели внутри контейнера
-    const panels = gsap.utils.toArray<HTMLDivElement>(".panel", panelsContainer);
+    const panels = gsap.utils.toArray<HTMLDivElement>("#panel", panelsContainer);
 
     // Настройка GSAP анимации
     let scrooll_trigger = gsap.to(panels, {
@@ -49,15 +49,15 @@ const ScrollBlock = () => {
         overflowX: "hidden", // Скрываем горизонтальный скролл
       }}
     >
-      <div className="panel" style={{ flex: "0 0 100vw" }}>
+      <div id="panel" className={style.panel} style={{ flex: "0 0 100vw" }}>
         <MoneyPathBlock />
       </div>
-      <div className="panel" style={{ flex: "0 0 100vw" }}>
+      <div id="panel" className={style.panel} style={{ flex: "0 0 100vw" }}>
         <div style={{ height: "100vh", alignContent: "center" }}>
           <DescriptionBlock />
         </div>
       </div>
-      <div className="panel" style={{ flex: "0 0 100vw" }}>
+      <div id="panel" className={style.panel} style={{ flex: "0 0 100vw" }}>
         <div style={{ height: "100vh", alignContent: "center", width: "100vw" }}>
           <AdvantagesBlock />
         </div>

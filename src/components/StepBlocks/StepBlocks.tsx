@@ -176,8 +176,10 @@ const StepBlocks = () => {
                                 <AnimatedText text={`${translations[stepActive]?.installTheAppPart2}`} />
                             </h4>
                             <p className={style.secondText}><AnimatedText text={`${translations[stepActive]?.downloadAndInstallTheApp}`} /></p>
-                            <button className={style.button}>{translations[stepActive]?.getTheApp}</button>
-                            <p className={style.guide}>{translations[stepActive]?.watchVideoGuide}</p>
+                            <div className={style.down__buttons}>
+                                <button className={style.button}>{translations[stepActive]?.getTheApp}</button>
+                                <p className={style.guide}>{translations[stepActive]?.watchVideoGuide}</p>
+                            </div>
                         </div>
                         <div className={style.right}>
                             <Image
