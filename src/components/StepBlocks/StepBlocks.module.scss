@@ -283,3 +283,10 @@
       padding-left: 15px;
     }
   }
+
+  
+  @media screen and (max-width: 320px) {
+    .left {
+      padding: 0 0.5rem;
+    }
+  }
