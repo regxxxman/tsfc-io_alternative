@@ -1,5 +1,9 @@
 @import "src/assets/styles/colors";
 
+.advantages__container {
+  height: 352px;
+}
+
 .advantages {
   display: flex;
   justify-content: space-between;
@@ -114,6 +118,9 @@
 }
 
 @media screen and (max-width: 1366px) {
+  .advantages__container {
+    height: 329px;
+  }
   .advantages {
     max-width: 824px;
     height: 329px;
@@ -156,6 +163,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .advantages__container {
+    height: 277px;
+  }
+  
   .advantages {
     max-width: 700px;
     height: 277px;
@@ -206,6 +217,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .advantages__container {
+    height: 329px;
+  }
   .advantages {
     max-width: 824px;
     height: 329px;
@@ -252,6 +266,9 @@
 }
 
 @media screen and (max-width: 932px) {
+  .advantages__container {
+    height: 288px;
+  }
   .advantages {
     max-width: 730px;
     height: 288px;

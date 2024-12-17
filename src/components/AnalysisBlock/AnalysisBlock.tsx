@@ -14,7 +14,7 @@ const AnalysisBlock = () => {
     useInView(inViewOptions);
 
   return (
-    <section className={styles.analysis}>
+    <section className={styles.analysis} style={{marginTop: "70vh"}}>
       <div className={styles["analysis__column-rows-wrapper"]}>
         <h3
           ref={rowHeadingRef}

@@ -161,10 +161,10 @@ const StepBlocks = () => {
 
     return (
         <div id="howToStart">
-            <div className={style.scrollBlock} id="scrollBlock" style={{ height: `${StepData.length * 200}vh` }}
+            <div className={style.scrollBlock} id="scrollBlock" style={{ height: `${StepData.length * 200}vh`, marginTop: "50vh" }}
 >
                 <div id="step" className={style.container}>
-                <div className={style["green-line"]} style={{width: `${scrollProgress}%`, opacity: `${scrollProgress}%`}}></div>
+                <div className={style["green-line"]} style={{width: `${!scrollProgress}%`, opacity: `${!scrollProgress}%`}}></div>
                     <div className={style.flex}>
                         <div className={style.left}>
                             <p className={style.step}>

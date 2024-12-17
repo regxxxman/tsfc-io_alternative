@@ -5,6 +5,7 @@ import DescriptionBlock from "../DescriptionBlock/DescriptionBlock";
 import MoneyPathBlock from "../MoneyPathBlock/MoneyPathBlock";
 import AdvantagesBlock from "../AdvantagesBlock/AdvantagesBlock";
 import style from "./ScrollBlock.module.scss";
+import Partners from "../Partners/Partners";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,6 +61,11 @@ const ScrollBlock = () => {
       <div id="panel" className={style.panel} style={{ flex: "0 0 100vw" }}>
         <div style={{ height: "100vh", alignContent: "center", width: "100vw" }}>
           <AdvantagesBlock />
+        </div>
+      </div>
+      <div id="panel" className={style.panel} style={{ flex: "0 0 100vw" }}>
+        <div style={{ height: "100vh", alignContent: "center" }}>
+          <Partners />
         </div>
       </div>
     </div>

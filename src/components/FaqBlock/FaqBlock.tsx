@@ -46,7 +46,7 @@ const FaqBlock = () => {
   }, []); // Зависимости от i18n и t, чтобы обновлять при изменении языка
 
   return (
-    <section className={styles.faq} id="faq">
+    <section className={styles.faq} id="faq" style={{marginTop: "100vh"}}>
       <h3 className={styles.faq__heading}>
         {t("faq.FAQ")} (<span>FAQ</span>)
       </h3>

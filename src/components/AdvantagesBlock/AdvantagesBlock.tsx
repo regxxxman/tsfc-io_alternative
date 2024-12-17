@@ -18,7 +18,7 @@ const AdvantagesBlock = () => {
   const { ref: blockRef, inView: blockInView } = useInView(inViewOptions);
 
   return (
-    <div className="">
+    <div className={styles.advantages__container}>
     <article
       ref={blockRef}
       className={`${styles["advantages"]} ${

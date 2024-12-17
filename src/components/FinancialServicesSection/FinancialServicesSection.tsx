@@ -23,7 +23,7 @@ const FinancialServicesSection = ({ id }: FinancialServicesSectionProps) => {
   });
 
   return (
-    <section id={id} className={styles["contact"]}>
+    <section id={id} className={styles["contact"]} style={{marginTop: "100vh"}}>
       <div className={styles["contact__header"]}>
         <h3 className={styles.formHeading}>{t("contactUsBlock.contactUs")}</h3>
         <Link
