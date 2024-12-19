@@ -20,6 +20,7 @@ import BackgroundDivider from "@/components/BackgroundDivider/BackgroundDivider"
 import ParallaxOnStart from "@components/ParallaxOnStart/ParallaxOnStart.tsx";
 // import PartnersBlock from "@components/Partners/Partners.tsx";
 import StepBlocks from "@/components/StepBlocks/StepBlocks";
+import NewSlider from "@/components/NewSlider/NewSlider";
 
 
 const HomePage = ({ lang }: { lang: string }) => {
@@ -43,7 +44,8 @@ const HomePage = ({ lang }: { lang: string }) => {
       <BackgroundDivider />
       {/*<ParallaxBackground />*/}
       <ParallaxOnStart />
-      <ScrollBlock /> 
+      <NewSlider />
+      {/* <ScrollBlock />  */}
       {/* <MoneyPathBlock /> */}
       {/* <DescriptionBlock /> */}
       {/* <AdvantagesSection /> */}

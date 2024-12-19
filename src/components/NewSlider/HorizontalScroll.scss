@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.panel {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 6vmin;
+}
+
+.horizontal-scroll {
+  min-height: 100vh;
+}
+
+.horizontal-inner {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  .slide {
+    position: relative;
+    width: 100vw;
+    flex: 0 0 100vw;
+    border: solid 2px red;
+
+    &.one {
+      flex: 0 0 50vw;
+      width: 50vw;
+    }
+
+    &.two {
+      flex: 0 0 calc(100vw + 200vw);
+      width: calc(100vw + 200vw);
+
+      .bar {
+        position: absolute;
+        left: 25vw;
+      }
+    }
+
+    &.three {
+      flex: 0 0 75vw;
+      width: 75vw;
+    }
+
+    &.four {
+      flex: 0 0 75vw;
+      width: 100vw;
+    }
+
+    &.five {
+      flex: 0 0 100vw;
+      width: 100vw;
+    }
+  }
+
+  & .blue {
+    background: blue;
+  }
+
+  & .white {
+    background: white;
+  }
+
+  & .orange {
+    background: orange;
+  }
+
+  & .green {
+    background: green;
+  }
+
+  & .purple {
+    background: purple;
+  }
+}
