@@ -49,8 +49,14 @@ body {
     }
 
     &.three {
-      flex: 0 0 75vw;
-      width: 75vw;
+      flex: 0 0 calc(100vw + 200vw);
+      width: calc(100vw + 200vw);
+      // flex: 0 0 75vw;
+      // width: 75vw;
+      .bar {
+        position: absolute;
+        left: 25vw;
+      }
     }
 
     &.four {

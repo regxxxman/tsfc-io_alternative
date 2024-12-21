@@ -18,9 +18,9 @@ import Header from "@/components/Header/Header";
 // import ParallaxBackground from "@/components/ParallaxBackground/ParallaxBackground";
 import BackgroundDivider from "@/components/BackgroundDivider/BackgroundDivider";
 import ParallaxOnStart from "@components/ParallaxOnStart/ParallaxOnStart.tsx";
-// import PartnersBlock from "@components/Partners/Partners.tsx";
 import StepBlocks from "@/components/StepBlocks/StepBlocks";
 import NewSlider from "@/components/NewSlider/NewSlider";
+import Partners from "@/components/Partners/Partners";
 
 
 const HomePage = ({ lang }: { lang: string }) => {
@@ -49,7 +49,7 @@ const HomePage = ({ lang }: { lang: string }) => {
       {/* <MoneyPathBlock /> */}
       {/* <DescriptionBlock /> */}
       {/* <AdvantagesSection /> */}
-      {/* <PartnersBlock /> */}
+      <Partners />
       <StepBlocks />
       {/* <FirstStepBlock /> */}
       <AnalysisBlock />
